@@ -321,7 +321,7 @@ picture {
   width: 85%;
   max-width: 66em;
   margin: 0 auto;
-
+  /* border: 1px solid red; */
 }
 
 .column {
@@ -342,7 +342,7 @@ picture {
   -ms-flex-pack: center;
   justify-items: center;
   /* justify-content: center; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 /*top quote*/
@@ -395,6 +395,10 @@ picture {
 
 .basis70 {
   flex-basis: 70%;
+}
+
+.basis75 {
+  flex-basis: 75%;
 }
 
 .basis80 {
@@ -645,20 +649,6 @@ li>ul>li {
     list-style-type: circle;
 }
 
-.purple-check>li {
-    list-style: none;
-    background: url(../images/purple-check.png);
-    background-repeat: no-repeat;
-    padding: 0 0 0 30px;
-    background-position: 0px 3px;
-    background-size: 20px;
-}
-
-
-.purple-check>li>ul>li {
-    list-style-type: circle;
-}
-
 .blue-check>li {
     list-style: none;
     background: url(../images/blue-check.png);
@@ -784,6 +774,12 @@ h4 {
 .head-button a {
   color: #fff;
   text-decoration: none;
+  margin-top: 12px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 258px;
+  border: 2px solid black !important;
 }
 
 @media screen and (max-width: 432px) {
@@ -826,7 +822,7 @@ h4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.25;
+  opacity: 0.20;
   /* Set opacity to 25% */
   z-index: 1;
   /* Make sure the image stays below the content */
@@ -904,7 +900,9 @@ h4 {
   text-decoration: none;
   color: var(--buttonTextColor, #fff);
   max-width: 12em;
+  font-size: 16px;
   font-weight: 700;
+  max-width: 258px;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.125rem;
@@ -960,53 +958,7 @@ h4 {
   outline: none;
 }
 
-.btn-purple {
-  color: var(--white);
-  background-color: var(--brightPurple);
-  border: none;
-  outline: none;
-}
 
-.btn-purple-disabled {
-  color: var(--white);
-  background-color: var(--brightPurple);
-  border: none;
-  outline: none;
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.6;
-}
-
-.btn-purple:hover {
-  color: var(--white);
-  background-color: var(--darkPurple);
-  border: none;
-  outline: none;
-}
-
-.btn-darkpurple {
-  color: var(--white);
-  background-color: var(--darkPurple);
-  border: none;
-  outline: none;
-}
-
-.btn-darkpurple-disabled {
-  color: var(--white);
-  background-color: var(--darkPurple);
-  border: none;
-  outline: none;
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.6;
-}
-
-.btn-darkpurple:hover {
-  color: var(--white);
-  background-color: var(--darkerPurple);
-  border: none;
-  outline: none;
-}
 
 .btn-yellow {
   color: var(--dark);
@@ -1039,8 +991,9 @@ h4 {
 .btn-sign-up {
   background-color: #00A3B4;
   color: var(--white) !important;
-  border: none;
   outline: none;
+  width: 100%;
+  padding: 10px 25px;
 }
 
 .btn-orange-disabled {
@@ -1171,21 +1124,7 @@ h4 {
   left: -3px;
 }
 
-.btn-cartoon-shadow-purple {
-  border: 5px solid black;
-  box-shadow: -8px 8px 0px 0px rgb(155 14 91);
-  -webkit-box-shadow: -8px 8px 0px 0px rgb(155 14 91);
-  -moz-box-shadow: -8px 8px 0px 0px rgb(155, 14, 91);
-  position: relative;
-}
 
-.btn-cartoon-shadow-purple:hover {
-  box-shadow: -5px 6px 0px 0px rgb(155 14 91);
-  -webkit-box-shadow: -5px 6px 0px 0px rgb(155 14 91);
-  -moz-box-shadow: -5px 6px 0px 0px rgba(155, 14, 91, 1);
-  bottom: -2px;
-  left: -3px;
-}
 
 /*------------------------------------*\
         $ END BUTTONS METRICS 2023 
@@ -1219,22 +1158,7 @@ h4 {
   outline: none;
 }
 
-.btn-metrics-cta {
-  color: var(--darkPurple);
-  background-color: rgb(241, 239, 239);
-  border: 1px transparent solid;
-  border: none;
-  outline: none;
-}
 
-.btn-metrics-cta:hover {
-  color: var(--white);
-  background-color: var(--brightPurple) !important;
-  border: 1px solid white;
-  box-shadow: 2px 2px 10px 1px #380b1d66;
-  border: none;
-  outline: none;
-}
 
 .btn-hiring-cta {
   color: var(--darkOrange);
@@ -1323,11 +1247,7 @@ START TESTIMONIALS
   }
 }
 
-.testimonial-quote .emph {
-  color: var(--darkPurple);
-  color: black;
-  font-weight: 400;
-}
+
 
 .testimonial-quote-bg:before {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
@@ -1606,6 +1526,12 @@ footer img {
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
   }
+
+  #header .topbar img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1629,6 +1555,42 @@ footer img {
 @media (max-width: 760px) {
   .mobile-align-start {
     align-items: flex-start;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  #header .topbar img {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .head-button {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  #header .topbar img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.0em;
   }
 }
 
