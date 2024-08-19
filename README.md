@@ -14,6 +14,7 @@ Describes What Your Strategic UX Vision Will Be.
 
 
 Web Developers: [@Antosha9108](https://github.com/Antosha9108) and [@AmyVelazquez](https://github.com/Antosha9108)
+
 Website: [visions.centercentre.com](https://visions.centercentre.com/)
 
 

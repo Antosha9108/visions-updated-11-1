@@ -32,7 +32,10 @@ FOOTER
     $GENERAL
 \*------------------------------------*/
 :root {
-  --darkBlue: #006f74;
+  --visionPurple: #614469;
+  --visionDarkPurple: #533a5a;
+
+  --darkBlue: #006f74; 
   --brightBlue: #00a3b4;
   --darkGreen: #575e22;
   --brightGreen: #8c9b28;
@@ -63,13 +66,7 @@ FOOTER
   padding: 0;
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue,
-    helvetica,
-    Cantarell,
-    Ubuntu,
-    roboto,
-    noto,
-    arial,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
     sans-serif;
   box-sizing: border-box;
 }
@@ -377,6 +374,7 @@ picture {
 
 .basis30 {
   flex-basis: 30%;
+  width: 100%;
 }
 
 .basis33 {
@@ -433,7 +431,6 @@ picture {
 }
 
 @media only screen and (max-width: 760px) {
-
   .image-left,
   .image-right {
     margin-right: auto;
@@ -616,8 +613,7 @@ h3.call-out-text {
 }
 
 .bg-Gray {
-
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   /* border: 1px solid red; */
 }
 
@@ -634,53 +630,27 @@ li {
   line-height: 1.5;
 }
 
-li>ul>li {
+li > ul > li {
   list-style-type: none;
 }
 
-/*
-.orange-check>li {
-    list-style: none;
-    background: url(../images/new-orange-check.png);
-    background-repeat: no-repeat;
-    padding: 0 0 0 30px;
-    background-position: 0px 3px;
-    background-size: 20px;
-}
 
-.orange-check>li>ul>li {
-    list-style-type: circle;
-}
 
-.blue-check>li {
-    list-style: none;
-    background: url(../images/blue-check.png);
-    background-repeat: no-repeat;
-    padding: 0 0 0 30px;
-    background-position: 0px 3px;
-    background-size: 20px;
-}
-
-.blue-check>li>ul>li {
-    list-style-type: circle;
-}
 
 ul,
 ol {
-    /* display: block; */
-/*margin-block-start: 0em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 50px;
-    padding: 5px 20px;
+  /* display: block; */
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 50px;
+  padding: 5px 20px;
 }
-*/
-/*
-li>ul {
-    margin-block-end: 0em;
+
+li > ul {
+  margin-block-end: 0em;
 }
-*/
 
 h1,
 h2,
@@ -813,32 +783,29 @@ h4 {
   /* Ensure no content spills out of the div */
 }
 
-
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/ux-vision-background-color.png');
+  background-image: url("/images/ux-vision-background-color.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.20;
+  opacity: 0.2;
   /* Set opacity to 25% */
   z-index: 1;
   /* Make sure the image stays below the content */
 }
 
-.hero>* {
+.hero > * {
   position: relative;
   z-index: 2;
   /* border: 1px solid red; */
   /* Make sure the content stays above the image */
 }
-
-
 
 */ .hero-padding-adjustment-image {
   padding-top: 3em;
@@ -962,8 +929,6 @@ h4 {
   outline: none;
 }
 
-
-
 .btn-yellow {
   color: var(--dark);
   background-color: var(--brightYellow);
@@ -977,6 +942,23 @@ h4 {
   border: none;
   outline: none;
 }
+
+.btn-visionPurple {
+  color: var(--white);
+  background-color: var(--visionPurple);
+  border: none;
+  outline: none;
+}
+
+.btn-visionPurple:hover {
+  color: var(--white);
+  background-color: var(--visionDarkPurple);
+  border: none;
+  outline: none;
+}
+
+
+
 
 .btn-blue {
   color: var(--white);
@@ -993,7 +975,7 @@ h4 {
 }
 
 .btn-sign-up {
-  background-color: #00A3B4;
+  background-color: #00a3b4;
   color: var(--white) !important;
   outline: none;
   width: 100%;
@@ -1128,8 +1110,6 @@ h4 {
   left: -3px;
 }
 
-
-
 /*------------------------------------*\
         $ END BUTTONS METRICS 2023 
 \*------------------------------------*/
@@ -1161,8 +1141,6 @@ h4 {
   border: none;
   outline: none;
 }
-
-
 
 .btn-hiring-cta {
   color: var(--darkOrange);
@@ -1225,6 +1203,15 @@ h4 {
      END   $BUTTON
 \*------------------------------------*/
 
+.link {
+  color: var(darkPurple);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 /*
 ----------------------------
 START TESTIMONIALS
@@ -1250,8 +1237,6 @@ START TESTIMONIALS
     margin-top: 35px !important;
   }
 }
-
-
 
 .testimonial-quote-bg:before {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
@@ -1313,10 +1298,6 @@ END TESTIMONIALS
 
 /* FORM */
 /* this is imbedded form from Active Campaign */
-
-
-
-
 
 /*------------------------------------*\
     $FOOTER
@@ -1397,7 +1378,7 @@ footer img {
   flex-basis: calc(33% - var(--gap));
 }
 
-.emulated-flex-gap>* {
+.emulated-flex-gap > * {
   margin: var(--gap) 0 0 var(--gap);
 }
 
@@ -1576,7 +1557,6 @@ footer img {
   }
 }
 
-
 @media (max-width: 430px) {
   .head-button {
     margin-top: 0.35rem;
@@ -1594,7 +1574,7 @@ footer img {
   }
 
   h3 {
-    font-size: 1.0em;
+    font-size: 1em;
   }
 }
 
@@ -1606,7 +1586,7 @@ footer img {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* _________________________
@@ -1614,16 +1594,12 @@ VISIONS */
 
 .all-new {
   display: flex;
-
 }
-
-
 
 .purple-master {
   background-color: #614469;
   color: white;
   font-weight: bold;
-
 }
 
 .purple-master a {
@@ -1637,28 +1613,27 @@ VISIONS */
   height: auto;
   overflow: hidden;
 
-  ;
   /* Ensure no content spills out of the div */
 }
 
 .hero2::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/images/ux-vision-background-color.png');
+  background-image: url("/images/ux-vision-background-color.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.50;
+  opacity: 0.5;
   /* Set opacity to 25% */
   z-index: 1;
   /* Make sure the image stays below the content */
 }
 
-.hero2>* {
+.hero2 > * {
   position: relative;
   z-index: 2;
   height: 600px;
@@ -1685,9 +1660,7 @@ VISIONS */
   /* align-items: center; */
   padding: 30px;
   position: relative;
-
 }
-
 
 .testimonial img {
   max-width: 130px;
@@ -1713,7 +1686,6 @@ VISIONS */
   position: relative;
 }
 
-
 .testimonial-2 img {
   max-width: 130px;
   position: absolute;
@@ -1724,8 +1696,6 @@ VISIONS */
   /* border: 3px solid orange; */
 }
 
-
-
 /* Images */
 
 .all-new-image {
@@ -1733,17 +1703,13 @@ VISIONS */
   margin-right: 50px;
 }
 
-
 .pricing-package {
   height: 260px;
   max-width: 400px;
   border-radius: 0 0 10px 10px;
-
-
 }
 
 .pricing-package-img {
-
   max-width: 400px;
 }
 
@@ -1754,7 +1720,6 @@ VISIONS */
 .m-l-3 {
   margin-left: 3em;
 }
-
 
 .img-Jared {
   width: 160%;
@@ -1769,7 +1734,6 @@ VISIONS */
 }
 
 .btn-ptl {
-
   background-color: #614469;
   color: var(--white) !important;
   outline: none;
