@@ -1232,12 +1232,14 @@ btn-blue {
      END   $BUTTON
 \*------------------------------------*/
 
-.link {
+a,
+a:link,
+a:visited {
   color: var(darkPurple);
   text-decoration: none;
 }
 
-.link:hover {
+a:hover {
   color: var(darkPurple);
   text-decoration: underline;
 }
