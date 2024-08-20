@@ -35,7 +35,7 @@ FOOTER
   --visionPurple: #614469;
   --visionDarkPurple: #533a5a;
 
-  --darkBlue: #006f74; 
+  --darkBlue: #006f74;
   --brightBlue: #00a3b4;
   --darkGreen: #575e22;
   --brightGreen: #8c9b28;
@@ -536,6 +536,11 @@ h3.call-out-text {
     $Colors
 \*------------------------------------*/
 
+.bg-vision-purple {
+  background-color: var(--visionPurple);
+  width: 100%;
+}
+
 .bg-darkRed {
   background-color: var(--darkRed);
 }
@@ -633,9 +638,6 @@ li {
 li > ul > li {
   list-style-type: none;
 }
-
-
-
 
 ul,
 ol {
@@ -800,6 +802,11 @@ h4 {
   /* Make sure the image stays below the content */
 }
 
+.hero2 {
+  width: 100%;
+  display: flex;
+}
+
 .hero > * {
   position: relative;
   z-index: 2;
@@ -957,25 +964,33 @@ h4 {
   outline: none;
 }
 
+.btn-brightBlue {
+  color: var(--white);
+  background-color: #00a3b4; 
+  border: none;
+  outline: none;
+}
+.btn-brightBlue:hover {
+  color: var(--white);
+  background-color: #006f74;
+  border: none;
+  outline: none;
+}
 
-
-
-.btn-blue {
+btn-blue {
   color: var(--white);
   background-color: var(--brightBlue);
   border: none;
   outline: none;
 }
-
 .btn-blue:hover {
   color: var(--white);
   background-color: var(--darkBlue);
   border: none;
   outline: none;
 }
-
 .btn-sign-up {
-  background-color: #00a3b4;
+  background-color: #00a3b4; 
   color: var(--white) !important;
   outline: none;
   width: 100%;
@@ -995,6 +1010,20 @@ h4 {
 .btn-orange:hover {
   color: var(--white) !important;
   background-color: var(--darkOrange);
+  border: none;
+  outline: none;
+}
+
+.btn-purple {
+  color: var(--white);
+  background-color: var(--brightPurple);
+  border: none;
+  outline: none;
+}
+
+.btn-purple:hover {
+  color: var(--white);
+  background-color: var(--darkPurple);
   border: none;
   outline: none;
 }
@@ -1511,6 +1540,16 @@ footer img {
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
   }
+  .head-button a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 12px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    /* max-width: 258px; */
+    border: 2px solid black !important;
+  }
 
   #header .topbar img {
     max-width: 100px;
@@ -1597,7 +1636,6 @@ VISIONS */
 }
 
 .purple-master {
-  background-color: #614469;
   color: white;
   font-weight: bold;
 }
@@ -1605,6 +1643,13 @@ VISIONS */
 .purple-master a {
   color: white;
   font-weight: bold;
+}
+
+.h3.purple-master {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .hero2 {
@@ -1739,4 +1784,27 @@ VISIONS */
   outline: none;
   width: 100%;
   padding: 10px 25px;
+}
+
+.btn-pricing-package {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--buttonTextColor, #fff);
+  /* max-width: 12em; */
+  font-size: 16px;
+  font-weight: 700;
+  /* max-width: 258px; */
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 0.6em 0.8em;
+  /* background: var(--accent, black); */
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear,
+    -webkit-transform 250ms ease-in-out;
+  margin: 0.35em;
+  border: none;
+  outline: none;
 }
