@@ -129,20 +129,27 @@ ul {
 }
 
 .ulHand {
-  margin-left: 2em;
-  line-height: 1;
   list-style: none;
-  padding: 0;
+  padding: 0px 0px;
 }
 
+
+
 .ulHand .liHand::before {
-  content: "👉";
+  content: "\1F449";
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -2em;
   font-weight: 700;
   line-height: 1.5;
-  padding: 5px 0;
+  padding: 5px 10px;
+}
+
+
+
+.ulPaid {
+  list-style: none;
+  padding: 0px 0px;
 }
 
 .ulPaid .paidLi::before {
@@ -166,14 +173,16 @@ ul {
   line-height: 1.5;
   padding: 5px 0px;
 }
+
 .ulPaidPTL {
   list-style: none;
   padding: 0px 0px;
+  
 }
 
 .ulPaidPTL .paidLiPT::before {
   content: "\2713 "; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #533a5a; /* Change the color */
+  color: #9b0e5b; /* Change the color */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -184,7 +193,7 @@ ul {
 
 .ulPaidPTL .paidLiPTli::before {
   content: "\2022  "; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #533a5a; /* Change the color */
+  color: #9b0e5b; /* Change the color */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
