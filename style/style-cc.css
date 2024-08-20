@@ -431,7 +431,6 @@ picture {
 }
 
 @media only screen and (max-width: 760px) {
-
   .image-left,
   .image-right {
     margin-right: auto;
@@ -636,7 +635,7 @@ li {
   line-height: 1.5;
 }
 
-li>ul>li {
+li > ul > li {
   list-style-type: none;
 }
 
@@ -651,7 +650,7 @@ ol {
   padding: 5px 20px;
 }
 
-li>ul {
+li > ul {
   margin-block-end: 0em;
 }
 
@@ -802,7 +801,6 @@ h4 {
   z-index: 1;
   /* Make sure the image stays below the content */
 }
-
 
 .hero2 {
   width: 100%;
@@ -1234,19 +1232,18 @@ btn-blue {
      END   $BUTTON
 \*------------------------------------*/
 
-a,
-a:link,
-a:visited {
-  color: var(darkPurple) !important;
+a.vision,
+a.vision:link,
+a.vision:visited {
+  color: #662547!important;
   text-decoration: none !important;
 }
 
-a:hover,
-a:active {
-  color: var(darkPurple) !important;
+a.vision:hover,
+a.vision:active {
+  color: #662547 !important;
   text-decoration: underline !important;
 }
-
 /*
 ----------------------------
 START TESTIMONIALS
@@ -1413,7 +1410,7 @@ footer img {
   flex-basis: calc(33% - var(--gap));
 }
 
-.emulated-flex-gap>* {
+.emulated-flex-gap > * {
   margin: var(--gap) 0 0 var(--gap);
 }
 
@@ -1685,7 +1682,7 @@ VISIONS */
   /* Make sure the image stays below the content */
 }
 
-.hero2>* {
+.hero2 > * {
   position: relative;
   z-index: 2;
   height: 600px;
@@ -1725,7 +1722,7 @@ VISIONS */
   /* Make sure the image stays below the content */
 }
 
-.hero4>* {
+.hero4 > * {
   position: relative;
   z-index: 2;
   height: 400px;
@@ -1733,7 +1730,6 @@ VISIONS */
   align-items: center;
   /* Make sure the content stays above the image */
 }
-
 
 .testimonial {
   background-color: #222222;
@@ -1851,6 +1847,4 @@ VISIONS */
   margin: 0.35em;
   border: none;
   outline: none;
-
 }
-
