@@ -133,19 +133,15 @@ ul {
   padding: 0px 0px;
 }
 
-
-
 .ulHand .liHand::before {
   content: "\1F449";
   display: inline-block;
   width: 1em;
   margin-left: -2em;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1;
   padding: 5px 10px;
 }
-
-
 
 .ulPaid {
   list-style: none;
@@ -177,7 +173,6 @@ ul {
 .ulPaidPTL {
   list-style: none;
   padding: 0px 0px;
-  
 }
 
 .ulPaidPTL .paidLiPT::before {
@@ -265,3 +260,82 @@ button {
     margin-top: -75px;
   }
 }
+
+/*Visions Navabr*/
+/*
+.topNavIcon {
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  align-items: center;
+  width: 100%;
+  column-gap: 1.5rem;
+  padding: 1em 0 0 0;
+  margin: 0 1em;
+  gap: 2em;
+}
+
+.ulTopNav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.right-align {
+  margin-left: auto;
+}
+
+.liTopNav {
+  color: rgb(0, 163, 180);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-size: 20.7px;
+  letter-spacing: 0em;
+  line-height: 1.15;
+  font-weight: 700 !important;
+  display: inline-block;
+  padding: 0 10px;
+  gap: 0.5rem 1.25rem;
+}
+
+.liTopNav a {
+  text-decoration: none;
+  color: #00a3b4;
+}
+
+.liTopNav a:hover {
+  border-bottom: 2px solid #00a3b4;
+  text-decoration: none;
+}
+
+.desktopLogoNav {
+  height: auto;
+  width: 35px !important;
+}
+
+.mobileIconNav {
+  height: auto;
+
+  width: 35px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+*/
