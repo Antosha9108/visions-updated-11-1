@@ -1232,18 +1232,26 @@ btn-blue {
      END   $BUTTON
 \*------------------------------------*/
 
+/*Vision Custom Link Colors */
+
 a.vision,
 a.vision:link,
 a.vision:visited {
-  color: #662547!important;
-  text-decoration: none !important;
+  color: #662547 !important;
+  text-decoration: underline !important;
 }
 
 a.vision:hover,
 a.vision:active {
-  color: #662547 !important;
+  color: #9b0e5b !important;
   text-decoration: underline !important;
 }
+
+/*End Vision Custom Link Colors */
+
+
+
+
 /*
 ----------------------------
 START TESTIMONIALS
