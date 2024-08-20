@@ -1237,14 +1237,14 @@ btn-blue {
 a,
 a:link,
 a:visited {
-  color: var(darkPurple);
-  text-decoration: none;
+  color: var(darkPurple) !important;
+  text-decoration: none !important;
 }
 
 a:hover,
 a:active {
-  color: var(darkPurple);
-  text-decoration: underline;
+  color: var(darkPurple) !important;
+  text-decoration: underline !important;
 }
 
 /*
