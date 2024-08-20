@@ -508,6 +508,7 @@ picture {
   .width-70-on-desktop {
     width: 70%;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -527,7 +528,7 @@ h3.call-out-text {
   font-size: 2.5rem;
 }
 
-@media (min-wdith: 1024px) {
+@media (min-width: 1024px) {
   .align-baseline {
     align-items: baseline;
   }
@@ -1282,6 +1283,8 @@ START TESTIMONIALS
   .testimonial-img {
     margin-top: 35px !important;
   }
+
+
 }
 
 .testimonial-quote-bg:before {
@@ -1584,6 +1587,12 @@ footer img {
   .hero-padding-adjustment-text {
     padding-bottom: 48px;
   }
+
+  .hero3 {
+    padding-top: 90px;
+    align-items: center;
+
+  }
 }
 
 .pl-0 {
@@ -1597,6 +1606,10 @@ footer img {
 @media (max-width: 760px) {
   .mobile-align-start {
     align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 1.6em;
   }
 
   h2 {
@@ -1708,8 +1721,8 @@ VISIONS */
 }
 
 .hero3 {
-  align-items: center;
-  padding-top: 90px;
+  /* align-items: center; */
+  /* padding-top: 90px; */
 }
 
 .hero4 {
@@ -1741,7 +1754,7 @@ VISIONS */
 .hero4>* {
   position: relative;
   z-index: 2;
-  height: 400px;
+  height: auto;
   display: flex;
   align-items: center;
   /* Make sure the content stays above the image */
@@ -1775,25 +1788,27 @@ VISIONS */
 .testimonial-2 {
   background-color: #222222;
   color: white;
-  height: 250px;
-  width: 750px;
+  /* height: 250px; */
+  height: auto;
+  /* width: 750px; */
+  width: 75%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
   /* border: 3px solid green; */
-  padding: 30px;
+  padding: 60px 30px 30px 30px;
   position: relative;
 }
 
 .testimonial-2 img {
   max-width: 130px;
   position: absolute;
-  top: -20%;
+  top: 0;
   /* Moves the image upwards by 20% of its height */
   left: 10%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   /* border: 3px solid orange; */
 }
 
@@ -1865,4 +1880,12 @@ VISIONS */
   border: none;
   outline: none;
 
+}
+
+
+@media only screen and (max-width: 925px) {
+  .testimonial-2 {
+    width: 100%;
+    padding-top: 30px;
+  }
 }
