@@ -809,7 +809,7 @@ h4 {
   display: flex;
 }
 
-.hero > * {
+.hero>* {
   position: relative;
   z-index: 2;
   /* border: 1px solid red; */
@@ -926,7 +926,7 @@ h4 {
 .btn:hover,
 .btn:focus {
   cursor: pointer;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   border: none;
   outline: none;
 }
@@ -972,6 +972,7 @@ h4 {
   border: none;
   outline: none;
 }
+
 .btn-brightBlue:hover {
   color: var(--white);
   background-color: #006f74;
@@ -985,14 +986,24 @@ btn-blue {
   border: none;
   outline: none;
 }
+
 .btn-blue:hover {
   color: var(--white);
   background-color: var(--darkBlue);
   border: none;
   outline: none;
 }
+
 .btn-sign-up {
   background-color: #00a3b4;
+  color: var(--white) !important;
+  outline: none;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.btn-sign-up-purple {
+  background-color: var(--visionPurple);
   color: var(--white) !important;
   outline: none;
   width: 100%;
@@ -1244,7 +1255,7 @@ a:visited {
 a:hover,
 a:active {
   color: var(darkPurple);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /*
@@ -1546,6 +1557,7 @@ footer img {
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
   }
+
   .head-button a {
     color: #fff;
     text-decoration: none;
@@ -1645,6 +1657,7 @@ VISIONS */
   color: white;
   font-weight: bold;
   max-height: 280px;
+  background-color: var(--visionPurple);
 }
 
 .purple-master a {
@@ -1853,4 +1866,3 @@ VISIONS */
   outline: none;
 
 }
-
