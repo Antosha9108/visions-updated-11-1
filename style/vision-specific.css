@@ -1,12 +1,2 @@
-<!--Using this style sheet to test out CSS-->
 
-
-.link {
-  color: var(darkPurple);
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
 
