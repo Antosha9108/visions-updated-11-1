@@ -1697,7 +1697,6 @@ VISIONS */
 .purple-master {
   color: white;
   font-weight: bold;
-  max-height: 280px;
   background-color: var(--visionPurple);
 }
 
@@ -1742,7 +1741,8 @@ VISIONS */
 .hero2>* {
   position: relative;
   z-index: 2;
-  height: 600px;
+  height: auto;
+  min-height: 600px;
   display: flex;
   align-items: center;
   /* Make sure the content stays above the image */
@@ -1791,8 +1791,9 @@ VISIONS */
 .testimonial {
   background-color: #222222;
   color: white;
-  height: 350px;
-  width: 450px;
+  height: auto;
+  min-height: 400px;
+  width: 50%;
   border-radius: 10px;
   margin-right: 30px;
   display: flex;
@@ -1915,4 +1916,29 @@ VISIONS */
     width: 100%;
     padding-top: 30px;
   }
+}
+
+@media only screen and (max-width: 952px) {
+  .hero2>* {
+    flex-direction: column;
+    padding: 60px 0 60px 0;
+  }
+
+  .testimonial {
+    margin: 30px;
+    width: auto;
+    min-height: auto;
+    /* Override the min-height */
+  }
+
+  .testimonial img {
+    max-width: 130px;
+    position: absolute;
+    top: 0;
+    /* Moves the image upwards by 20% of its height */
+    left: 0%;
+    transform: translate(10%, -50%);
+    /* border: 3px solid orange; */
+  }
+
 }
