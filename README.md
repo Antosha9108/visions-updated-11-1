@@ -1,4 +1,5 @@
-2024
+
+2024 UX Vision Intensive
 Craft + Lead a Strategic UX Vision
 
 This repo contains all the code related to our Craft + Lead a Strategic UX Vision intensive website site found here: https://visions.centercentre.com/
