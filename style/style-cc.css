@@ -1260,6 +1260,28 @@ a.vision:active {
   text-decoration: underline !important;
 }
 
+
+a.article,
+a.article:link,
+a.article:visited {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+a.article:hover,
+a.article:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
 /*End Vision Custom Link Colors */
 
 
