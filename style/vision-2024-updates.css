@@ -128,11 +128,13 @@ ul {
   margin-left: 2em;
   line-height: 1;
   padding: 0px 0px;
+  list-style-position: outside;
 }
 
 .ulHand {
   list-style: none;
   padding: 0px 0px;
+  list-style-position: outside;
 }
 
 .ulHand .liHand::before {
@@ -148,6 +150,7 @@ ul {
 .ulPaid {
   list-style: none;
   padding: 0px 0px;
+  list-style-position: outside;
 }
 
 .ulPaid .paidLi::before {
@@ -175,6 +178,7 @@ ul {
 .ulPaidPTL {
   list-style: none;
   padding: 0px 0px;
+  list-style-position: outside;
 }
 
 .ulPaidPTL .paidLiPT::before {
@@ -262,4 +266,3 @@ button {
     margin-top: -75px;
   }
 }
-
