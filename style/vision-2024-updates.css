@@ -48,7 +48,8 @@
 }
 
 .padding25 {
-  padding: 10px 25px;
+  padding: 0px 25px;
+  margin-top: -15px;
 }
 
 .padding50 {
@@ -166,6 +167,8 @@ ul {
 
 .ulPaid>.paidLi {
   display: table-row;
+  /* padding: 15px 10px; */
+
 }
 
 .ulPaid .paidLi::before {
@@ -180,7 +183,7 @@ ul {
   margin-left: 0em;
   font-weight: 700;
   line-height: 1.5;
-  padding: 5px 5px;
+  padding: 7px 5px;
   display: table-cell;
   text-align: right;
 }
@@ -202,7 +205,7 @@ ul {
   /* Also needed for space (tweak if needed) */
   font-weight: 700;
   line-height: 1.5;
-  padding: 5px 5px;
+  padding: 7px 5px;
   display: table-cell;
   text-align: right;
 }
@@ -232,7 +235,7 @@ ul {
   /* Also needed for space (tweak if needed) */
   font-weight: 700;
   line-height: 1.5;
-  padding: 5px 5px;
+  padding: 7px 5px;
   display: table-cell;
   text-align: right;
 }
@@ -254,7 +257,7 @@ ul {
   /* Also needed for space (tweak if needed) */
   font-weight: 700;
   line-height: 1.5;
-  padding: 5px 5px;
+  padding: 7px 5px;
   display: table-cell;
   text-align: right;
 }
@@ -325,4 +328,13 @@ button {
   .mainbody {
     margin-top: -75px;
   }
+}
+
+.price {
+  padding-bottom: 0;
+
+}
+
+.price-small {
+  padding-bottom: 10px;
 }
