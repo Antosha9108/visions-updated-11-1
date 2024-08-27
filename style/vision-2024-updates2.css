@@ -451,10 +451,7 @@ button {
 
 /* For screens 767px and below */
 @media only screen and (max-width: 767px) {
-  .head-button {
-    /* display: none; */
-    /* Hide the button on smaller screens */
-  }
+
 
   .hamburger-menu {
     display: flex;

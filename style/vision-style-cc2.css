@@ -328,9 +328,9 @@ picture {
   padding: 1.5em;
 }
 
-.column:not(:last-child) {
+/* .column:not(:last-child) {
   padding-right: 16px;
-}
+} */
 
 .split {
   display: -webkit-box;
