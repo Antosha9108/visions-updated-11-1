@@ -336,6 +336,7 @@ button {
 }
 
 /* Navbar */
+/*More header and topbar styles in vision-style.css*/
 .topbar {
   display: flex;
   align-items: center;
@@ -377,10 +378,14 @@ button {
 }
 
 .liTopNav a {
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
   text-decoration: none;
   color: #00a3b4;
   padding: 10px;
   font-weight: bold;
+
 }
 
 .liTopNav a:hover {
