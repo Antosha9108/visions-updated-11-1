@@ -2025,10 +2025,6 @@ footer img {
   margin: var(--gap) 0 0 var(--gap);
 }
 
-/* .emulated-flex-gap p {
-  font-size: 15pt;
-} */
-
 .emulated-flex-gap div {
   flex-basis: calc(33% - var(--gap));
 }
