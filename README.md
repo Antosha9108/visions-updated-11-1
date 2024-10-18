@@ -14,7 +14,7 @@ Detailed page with day by day descriptions of the instensive schedule and conten
 Describes What Your Strategic UX Vision Will Be.
 
 
-Web Developers: [@Antosha9108](https://github.com/Antosha9108) and [@AmyVelazquez](https://github.com/Antosha9108)
+Web Developers: [@Antosha9108](https://github.com/Antosha9108) and [@AmyVelazquez](https://github.com/AmyVelazquez)
 
 Website: [visions.centercentre.com](https://visions.centercentre.com/)
 
