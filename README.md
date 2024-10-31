@@ -4,7 +4,13 @@ Craft + Lead a Strategic UX Vision
 
 This repo contains all the code related to our Craft + Lead a Strategic UX Vision intensive website site found here: https://visions.centercentre.com/
 
-# Landing Page
+# Intensive Version Folder
+All the files for the full site before the intensive are copied in this folder.
+
+# Landing Page Folder
+This is the pre-intensive email sign up.
+
+# Home Page
 Main page with fundamentals and PTL purchase options.
 
 # About Page
